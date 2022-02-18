@@ -7,10 +7,13 @@ export default function Userdata(props) {
   return (
     <Fragment>
       {props.data.length > 0 ? (
-        <p>
-          {props.data[0].login} who lives in{" "}
-          {props.data[0].location ? props.data[0].location : "unknown place"}
-        </p>
+        <div>
+          <p>
+            {props.data[0].login} who lives in
+            {props.data[0].location ? props.data[0].location : "unknown place"}
+          </p>
+          <p>{props.data[0].bio ? props.data[0].bio : "unknown place"}</p>
+        </div>
       ) : (
         <p>No results</p>
       )}

@@ -26,7 +26,9 @@ export default function Search(props) {
           onChange={inputhandler}
           value={name}
         />
-        <button onClick={getData}>Search</button>
+        <button onClick={getData} className="getbutton">
+          Search
+        </button>
       </div>
     </Fragment>
   );

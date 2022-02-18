@@ -19,3 +19,14 @@
   height: 20vw;
   width: 20vw;
 }
+
+@media only screen and (max-width: 600px) {
+  .card {
+    margin-left: 10vw;
+  }
+  .picturegithub {
+    height: 40vw;
+    margin-left: 15vw;
+    width: 40vw;
+  }
+}

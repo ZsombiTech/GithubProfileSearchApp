@@ -30,12 +30,13 @@ export default function Userdata(props) {
                 : "unknown number"}
             </p>
           </div>
-
-          <img
-            src={props.data[0].avatar_url}
-            alt="profilepicture"
-            className="picturegithub"
-          />
+          <a href={`https://github.com/${props.data[0].login}`} target="_blank">
+            <img
+              src={props.data[0].avatar_url}
+              alt="profilepicture"
+              className="picturegithub"
+            />
+          </a>
         </div>
       ) : (
         <p className="cardthree">No results</p>

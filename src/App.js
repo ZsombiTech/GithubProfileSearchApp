@@ -8,7 +8,7 @@ function App() {
   const [data, setData] = useState([]);
   return (
     <Fragment>
-      <Headtitle title="Search by username" />
+      <Headtitle title="Search by Github username" />
       <div className="page">
         <Search setData={setData} />
       </div>

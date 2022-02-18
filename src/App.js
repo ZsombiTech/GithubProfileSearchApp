@@ -7,7 +7,9 @@ function App() {
   return (
     <Fragment>
       <Headtitle title="Search by username" />
-      <Search />
+      <div className="page">
+        <Search />
+      </div>
     </Fragment>
   );
 }

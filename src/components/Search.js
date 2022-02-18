@@ -4,7 +4,10 @@ import "../styles/Search.css";
 export default function Search() {
   return (
     <Fragment>
-      <input type="text" id="search" placeholder="Username" />
+      <div className="fullsbar">
+        <input type="text" id="search" placeholder="Username" />
+        <button>Search</button>
+      </div>
     </Fragment>
   );
 }

@@ -11,8 +11,8 @@ function App() {
       <Headtitle title="Search by username" />
       <div className="page">
         <Search setData={setData} />
-        <Userdata data={data} />
       </div>
+      <Userdata data={data} />
     </Fragment>
   );
 }

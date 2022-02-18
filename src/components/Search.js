@@ -7,9 +7,12 @@ export default function Search(props) {
 
   const inputhandler = (event) => {
     setName(event.target.value);
+  };
+  const getData = () => {
+    props.setData([]);
     axios.get(`https://api.github.com/users/${name}`).then((res) => {
       const datablock = res.data;
-      props.setData(datablock);
+      props.setData((oldArray) => [...oldArray, datablock]);
     });
   };
 
@@ -23,6 +26,7 @@ export default function Search(props) {
           onChange={inputhandler}
           value={name}
         />
+        <button onClick={getData}>Search</button>
       </div>
     </Fragment>
   );

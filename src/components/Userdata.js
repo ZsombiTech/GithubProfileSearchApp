@@ -7,12 +7,35 @@ export default function Userdata(props) {
   return (
     <Fragment>
       {props.data.length > 0 ? (
-        <div>
-          <p>
-            {props.data[0].login} who lives in
-            {props.data[0].location ? props.data[0].location : "unknown place"}
-          </p>
-          <p>{props.data[0].bio ? props.data[0].bio : "unknown place"}</p>
+        <div className="card">
+          <div className="border">
+            {" "}
+            <p className="cardthree">
+              {props.data[0].login} who lives in{" "}
+              {props.data[0].location
+                ? props.data[0].location
+                : " unknown place"}
+            </p>
+            <p className="cardthree">
+              {props.data[0].bio ? props.data[0].bio : "unknown bio"}
+            </p>
+            <p className="cardthree">
+              Official Name:{" "}
+              {props.data[0].name ? props.data[0].name : "unknown fullname"}
+            </p>
+            <p className="cardthree">
+              Number of public repos:{" "}
+              {props.data[0].public_repos
+                ? props.data[0].public_repos
+                : "unknown number"}
+            </p>
+          </div>
+
+          <img
+            src={props.data[0].avatar_url}
+            alt="profilepicture"
+            className="picturegithub"
+          />
         </div>
       ) : (
         <p>No results</p>

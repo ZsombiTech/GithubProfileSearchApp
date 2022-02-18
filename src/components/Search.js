@@ -21,7 +21,7 @@ export default function Search(props) {
       <div className="fullsbar">
         <input
           type="text"
-          id="search"
+          className="search"
           placeholder="Username"
           onChange={inputhandler}
           value={name}

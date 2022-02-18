@@ -38,7 +38,7 @@ export default function Userdata(props) {
           />
         </div>
       ) : (
-        <p>No results</p>
+        <p className="cardthree">No results</p>
       )}
     </Fragment>
   );

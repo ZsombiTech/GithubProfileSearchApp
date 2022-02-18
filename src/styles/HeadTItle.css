@@ -2,4 +2,7 @@
   font-family: "Gill Sans", sans-serif;
   font-size: 30px;
   text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
